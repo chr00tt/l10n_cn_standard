@@ -7,3 +7,5 @@
 # Copyright (C) 2008-2019  开阖软件 jeff@osbzr.com    < PM and LTS >
 # Copyright (C) 2017-2019  jeffery9@gmail.com
 # Copyright (C) 2019-now  He Jian 1217875253@gmail.com
+
+from . import models
