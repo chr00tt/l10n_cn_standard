@@ -15,7 +15,7 @@
     'category': 'Accounting/Localizations/Account Charts',
     'author': ['lvxin@gmail.co', 'oldrev@gmail.co', 'ccdos@intoerp.com', 'jeff@osbzr.com', 'jeffery9@gmail.com', '1217875253@qq.com'],
 
-    'website': 'http://shine-it.net',
+    'website': 'https://github.com/chr00tt/l10n_cn_standard',
     'description': """
 Including the following data in the Accounting Standards for Business Enterprises
 包含企业会计准则以下数据
