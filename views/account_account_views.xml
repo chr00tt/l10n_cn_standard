@@ -5,9 +5,9 @@
         <field name="model">account.account</field>
         <field name="inherit_id" ref="account.view_account_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='name']" position="after">
+            <field name="currency_id" position="before">
                 <field name="parent_id"/>
-            </xpath>
+            </field>
         </field>
     </record>
 </odoo>
