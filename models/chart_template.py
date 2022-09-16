@@ -1,5 +1,15 @@
 # -*- coding: utf-8 -*-
-from odoo import models
+from odoo import fields, models
+
+
+class AccountAccountTemplate(models.Model):
+    _inherit = "account.account.template"
+    _parent_name = "parent_id"
+    _parent_store = True
+
+    parent_id = fields.Many2one('account.account.template', 'Parent Account', index=True, ondelete='cascade', check_company=True)
+    child_ids = fields.One2many('account.account.template', 'parent_id', 'Contains')
+    parent_path = fields.Char(index=True)
 
 
 class AccountChartTemplate(models.Model):

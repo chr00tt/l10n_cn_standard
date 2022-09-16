@@ -3,7 +3,7 @@ from odoo import fields, models
 
 
 class AccountAccount(models.Model):
-    _inherit = ['account.account']
+    _inherit = 'account.account'
     _parent_name = "parent_id"
     _parent_store = True
 
