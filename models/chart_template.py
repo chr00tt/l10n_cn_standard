@@ -21,6 +21,26 @@ class AccountAccountTemplate(models.Model):
 class AccountChartTemplate(models.Model):
     _inherit = 'account.chart.template'
 
+    def _load_template(self, company, code_digits=None, account_ref=None, taxes_ref=None):
+        self.generate_account_categories(company)
+        
+        return super(AccountChartTemplate, self)._load_template(company, code_digits, account_ref, taxes_ref)
+
+    def generate_account_categories(self, company):
+        """ This method generates account categories from account categories templates.
+        :param company: company to generate the account categories for
+        """
+        self.ensure_one()
+        category_templates = self.env['account.category.template'].search([('chart_template_id', '=', self.id)])
+        template_vals = []
+        for category_template in category_templates:
+            vals = {
+                'name': category_template.name,
+                'company_id': company.id,
+            }
+            template_vals.append((category_template, vals))
+        groups = self._create_records_with_xmlid('account.account.category', template_vals, company)
+
     def generate_account(self, tax_template_ref, acc_template_ref, code_digits, company):
         self.ensure_one()
         account_tmpl_obj = self.env['account.account.template']

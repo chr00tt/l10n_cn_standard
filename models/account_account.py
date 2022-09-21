@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 from odoo import fields, models
 
+
 class AccountAccountCategory(models.Model):
     _name = "account.account.category"
     _description = "Account Category"
 
     name = fields.Char(string='Account Category', required=True, translate=True)
     note = fields.Text(string='Description')
+    company_id = fields.Many2one('res.company', required=True, readonly=True, default=lambda self: self.env.company)
 
 
 class AccountAccount(models.Model):
