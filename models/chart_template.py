@@ -17,6 +17,12 @@ class AccountAccountTemplate(models.Model):
     child_ids = fields.One2many('account.account.template', 'parent_id', 'Contains')
     parent_path = fields.Char(index=True)
 
+    account_category = fields.Many2one('account.category.template', string='Account Category', required=True)
+    balance_direction = fields.Selection([
+        ('debit', 'Debit'),
+        ('credit', 'Credit')], string='Balance direction',
+        default='debit')
+
 
 class AccountChartTemplate(models.Model):
     _inherit = 'account.chart.template'
