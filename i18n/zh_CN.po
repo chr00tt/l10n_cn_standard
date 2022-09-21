@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-21 06:12+0000\n"
-"PO-Revision-Date: 2022-09-21 06:12+0000\n"
+"POT-Creation-Date: 2022-09-21 07:29+0000\n"
+"PO-Revision-Date: 2022-09-21 07:29+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -24,6 +24,7 @@ msgstr "账户"
 #: model:ir.model,name:l10n_cn_standard.model_account_account_category
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account__account_category
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_category__name
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_template__account_category
 msgid "Account Category"
 msgstr "科目分类"
 
@@ -33,17 +34,35 @@ msgid "Account Chart Template"
 msgstr "科目表模版"
 
 #. module: l10n_cn_standard
+#: model:account.account.category,name:l10n_cn_standard.2_account_category_asset
+msgid "Asset"
+msgstr "资产类"
+
+#. module: l10n_cn_standard
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account__balance_direction
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_template__balance_direction
 msgid "Balance direction"
 msgstr "余额方向"
 
 #. module: l10n_cn_standard
+#: model:account.account.category,name:l10n_cn_standard.2_account_category_common
+msgid "Common"
+msgstr "共同类"
+
+#. module: l10n_cn_standard
+#: model:account.account.category,name:l10n_cn_standard.2_account_category_cost
+msgid "Cost"
+msgstr "成本类"
+
+#. module: l10n_cn_standard
 #: model:ir.model.fields.selection,name:l10n_cn_standard.selection__account_account__balance_direction__credit
+#: model:ir.model.fields.selection,name:l10n_cn_standard.selection__account_account_template__balance_direction__credit
 msgid "Credit"
 msgstr "贷"
 
 #. module: l10n_cn_standard
 #: model:ir.model.fields.selection,name:l10n_cn_standard.selection__account_account__balance_direction__debit
+#: model:ir.model.fields.selection,name:l10n_cn_standard.selection__account_account_template__balance_direction__debit
 msgid "Debit"
 msgstr "借"
 
@@ -56,6 +75,11 @@ msgstr "借"
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_move_line__display_name
 msgid "Display Name"
 msgstr "显示名称"
+
+#. module: l10n_cn_standard
+#: model:account.account.category,name:l10n_cn_standard.2_account_category_equity
+msgid "Equity"
+msgstr "所有者权益类"
 
 #. module: l10n_cn_standard
 #: model:ir.model,name:l10n_cn_standard.model_account_move_line
@@ -73,6 +97,11 @@ msgid "Last Modified on"
 msgstr "最后修改日"
 
 #. module: l10n_cn_standard
+#: model:account.account.category,name:l10n_cn_standard.2_account_category_liability
+msgid "Liability"
+msgstr "负债类"
+
+#. module: l10n_cn_standard
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account__parent_id
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_template__parent_id
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_move_line__parent_account
@@ -84,6 +113,11 @@ msgstr "上级科目"
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_template__parent_path
 msgid "Parent Path"
 msgstr "上级路径"
+
+#. module: l10n_cn_standard
+#: model:account.account.category,name:l10n_cn_standard.2_account_category_profit_and_loss
+msgid "Profit and Loss"
+msgstr "损益类"
 
 #. module: l10n_cn_standard
 #: model:ir.model,name:l10n_cn_standard.model_account_account_template
