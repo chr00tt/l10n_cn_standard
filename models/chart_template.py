@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import fields, models
+from odoo import api, fields, models, _
 
 class AccountCategoryTemplate(models.Model):
     _name = "account.category.template"
@@ -26,6 +26,48 @@ class AccountAccountTemplate(models.Model):
 
 class AccountChartTemplate(models.Model):
     _inherit = 'account.chart.template'
+
+    def _create_bank_journals(self, company, acc_template_ref):
+        '''
+        This function creates bank journals and their account for each line
+        data returned by the function _get_default_bank_journals_data.
+
+        :param company: the company for which the wizard is running.
+        :param acc_template_ref: the dictionary containing the mapping between the ids of account templates and the ids
+            of the accounts that have been generated from them.
+        '''
+        self.ensure_one()
+        bank_journals = self.env['account.journal']
+        # Create the journals that will trigger the account.account creation
+        for acc in self._get_default_bank_journals_data():
+            vals = {
+                'name': acc['acc_name'],
+                'type': acc['account_type'],
+                'company_id': company.id,
+                'currency_id': acc.get('currency_id', self.env['res.currency']).id,
+                'sequence': 10,
+            }
+            if acc['default_account_id']:
+                vals['default_account_id'] = acc_template_ref[acc['default_account_id']]
+            bank_journals += self.env['account.journal'].create(vals)
+
+        return bank_journals
+
+    @api.model
+    def _get_default_bank_journals_data(self):
+        if not self == self.env.ref('l10n_cn_standard.l10n_chart_china_standard_business'):
+            super(AccountChartTemplate, self)._get_default_bank_journals_data()
+
+        return [
+            {
+                'acc_name': _('Cash'), 'account_type': 'cash',
+                'default_account_id': self.env.ref('l10n_cn_standard.account_1001').id
+            },
+            {
+                'acc_name': _('Bank'), 'account_type': 'bank',
+                'default_account_id': self.env.ref('l10n_cn_standard.account_1002').id,
+            },
+        ]
 
     def generate_categories(self, company):
         self.ensure_one()

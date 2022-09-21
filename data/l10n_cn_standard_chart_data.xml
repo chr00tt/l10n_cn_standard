@@ -4,12 +4,12 @@
     <data>
         <!-- Chart template -->
         <record id="l10n_chart_china_standard_business" model="account.chart.template">
-            <field name="name">企业会计科目表 （财会[2006]3号《企业会计准则》</field>
-            <field name="code_digits" eval="6" />
+            <field name="name">企业会计准则（财会[2006]3号）</field>
+            <field name="code_digits" eval="4" />
             <field name="currency_id" ref="base.CNY" />
-            <field name="cash_account_code_prefix">1001.0</field>
-            <field name="bank_account_code_prefix">1002.0</field>
-            <field name="transfer_account_code_prefix">1003.0</field>
+            <field name="cash_account_code_prefix">10010</field>
+            <field name="bank_account_code_prefix">10020</field>
+            <field name="transfer_account_code_prefix">10030</field>
         </record>
     </data>
 </odoo>
