@@ -27,15 +27,7 @@ class AccountAccountTemplate(models.Model):
 class AccountChartTemplate(models.Model):
     _inherit = 'account.chart.template'
 
-    def _load_template(self, company, code_digits=None, account_ref=None, taxes_ref=None):
-        self.generate_account_categories(company)
-        
-        return super(AccountChartTemplate, self)._load_template(company, code_digits, account_ref, taxes_ref)
-
-    def generate_account_categories(self, company):
-        """ This method generates account categories from account categories templates.
-        :param company: company to generate the account categories for
-        """
+    def generate_categories(self, company):
         self.ensure_one()
         category_templates = self.env['account.category.template'].search([('chart_template_id', '=', self.id)])
         template_vals = []
@@ -47,7 +39,20 @@ class AccountChartTemplate(models.Model):
             template_vals.append((category_template, vals))
         groups = self._create_records_with_xmlid('account.account.category', template_vals, company)
 
+        category_template_ref = {}
+        for template, group in zip(category_templates, groups):
+            category_template_ref[template.id] = group.id
+        return category_template_ref
+
+    def _get_account_vals(self, company, account_template, code_acc, tax_template_ref, category_template_ref):
+        val = super(AccountChartTemplate, self)._get_account_vals(company, account_template, code_acc, tax_template_ref)
+        val['account_category'] = account_template.account_category and category_template_ref[account_template.account_category.id] or False
+        val['balance_direction'] = account_template.balance_direction
+        return val
+
     def generate_account(self, tax_template_ref, acc_template_ref, code_digits, company):
+        category_template_ref = self.generate_categories(company)
+
         self.ensure_one()
         account_tmpl_obj = self.env['account.account.template']
         acc_template = account_tmpl_obj.search([('nocreate', '!=', True), ('chart_template_id', '=', self.id)], order='id')
@@ -55,7 +60,7 @@ class AccountChartTemplate(models.Model):
         for account_template in acc_template:
             # 科目代码不需要补齐到6位
             code_acc = account_template.code or ''
-            vals = self._get_account_vals(company, account_template, code_acc, tax_template_ref)
+            vals = self._get_account_vals(company, account_template, code_acc, tax_template_ref, category_template_ref)
             template_vals.append((account_template, vals))
         accounts = self._create_records_with_xmlid('account.account', template_vals, company)
         for template, account in zip(acc_template, accounts):
