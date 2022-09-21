@@ -32,6 +32,7 @@ Including the following data in the Accounting Standards for Business Enterprise
     """,
     'depends': ['l10n_cn'],
     'data': [
+        'security/ir.model.access.csv',
         'data/l10n_cn_standard_chart_data.xml',
         'data/account.account.template.csv',
         'data/account_tax_template_data.xml',

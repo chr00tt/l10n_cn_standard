@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 from odoo import fields, models
 
+class AccountCategoryTemplate(models.Model):
+    _name = "account.category.template"
+    _description = 'Template for Account Categories'
+    name = fields.Char(required=True)
+    chart_template_id = fields.Many2one('account.chart.template', string='Chart Template', required=True)
+
 
 class AccountAccountTemplate(models.Model):
     _inherit = "account.account.template"
