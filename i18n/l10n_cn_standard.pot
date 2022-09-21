@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-19 07:58+0000\n"
-"PO-Revision-Date: 2022-09-19 07:58+0000\n"
+"POT-Creation-Date: 2022-09-21 06:12+0000\n"
+"PO-Revision-Date: 2022-09-21 06:12+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -66,8 +66,25 @@ msgid "Account"
 msgstr ""
 
 #. module: l10n_cn_standard
+#: model:ir.model,name:l10n_cn_standard.model_account_account_category
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account__account_category
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_category__name
+msgid "Account Category"
+msgstr ""
+
+#. module: l10n_cn_standard
 #: model:ir.model,name:l10n_cn_standard.model_account_chart_template
 msgid "Account Chart Template"
+msgstr ""
+
+#. module: l10n_cn_standard
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account__balance_direction
+msgid "Balance direction"
+msgstr ""
+
+#. module: l10n_cn_standard
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_category_template__chart_template_id
+msgid "Chart Template"
 msgstr ""
 
 #. module: l10n_cn_standard
@@ -77,8 +94,37 @@ msgid "Contains"
 msgstr ""
 
 #. module: l10n_cn_standard
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_category__create_uid
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_category_template__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_cn_standard
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_category__create_date
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_category_template__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_cn_standard
+#: model:ir.model.fields.selection,name:l10n_cn_standard.selection__account_account__balance_direction__credit
+msgid "Credit"
+msgstr ""
+
+#. module: l10n_cn_standard
+#: model:ir.model.fields.selection,name:l10n_cn_standard.selection__account_account__balance_direction__debit
+msgid "Debit"
+msgstr ""
+
+#. module: l10n_cn_standard
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_category__note
+msgid "Description"
+msgstr ""
+
+#. module: l10n_cn_standard
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account__display_name
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_category__display_name
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_template__display_name
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_category_template__display_name
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_chart_template__display_name
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_move_line__display_name
 msgid "Display Name"
@@ -86,7 +132,9 @@ msgstr ""
 
 #. module: l10n_cn_standard
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account__id
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_category__id
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_template__id
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_category_template__id
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_chart_template__id
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_move_line__id
 msgid "ID"
@@ -99,10 +147,29 @@ msgstr ""
 
 #. module: l10n_cn_standard
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account____last_update
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_category____last_update
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_template____last_update
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_category_template____last_update
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_chart_template____last_update
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_move_line____last_update
 msgid "Last Modified on"
+msgstr ""
+
+#. module: l10n_cn_standard
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_category__write_uid
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_category_template__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_cn_standard
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_category__write_date
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_category_template__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_cn_standard
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_category_template__name
+msgid "Name"
 msgstr ""
 
 #. module: l10n_cn_standard
@@ -116,6 +183,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account__parent_path
 #: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account_template__parent_path
 msgid "Parent Path"
+msgstr ""
+
+#. module: l10n_cn_standard
+#: model:ir.model,name:l10n_cn_standard.model_account_category_template
+msgid "Template for Account Categories"
 msgstr ""
 
 #. module: l10n_cn_standard
@@ -254,17 +326,17 @@ msgid "其他货币资金"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_1_4
+#: model:account.account.template,name:l10n_cn_standard.account_22210104
 msgid "减免税款"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_1_8
+#: model:account.account.template,name:l10n_cn_standard.account_22210108
 msgid "出口抵减内销产品应纳税额"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_1_6
+#: model:account.account.template,name:l10n_cn_standard.account_22210106
 msgid "出口退税"
 msgstr ""
 
@@ -494,7 +566,7 @@ msgid "工程结算"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_1_2
+#: model:account.account.template,name:l10n_cn_standard.account_22210102
 msgid "已交税金"
 msgstr ""
 
@@ -514,42 +586,42 @@ msgid "库存股"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_11
+#: model:account.account.template,name:l10n_cn_standard.account_222111
 msgid "应交个人所得税"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_9
+#: model:account.account.template,name:l10n_cn_standard.account_222109
 msgid "应交土地使用税"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_6
+#: model:account.account.template,name:l10n_cn_standard.account_222106
 msgid "应交土地增值税"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_7
+#: model:account.account.template,name:l10n_cn_standard.account_222107
 msgid "应交城市维护建设税"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_1
+#: model:account.account.template,name:l10n_cn_standard.account_222101
 msgid "应交增值税"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_8
+#: model:account.account.template,name:l10n_cn_standard.account_222108
 msgid "应交房产税"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_5
+#: model:account.account.template,name:l10n_cn_standard.account_222105
 msgid "应交所得税"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_3
+#: model:account.account.template,name:l10n_cn_standard.account_222103
 msgid "应交消费税"
 msgstr ""
 
@@ -559,17 +631,17 @@ msgid "应交税费"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_2
+#: model:account.account.template,name:l10n_cn_standard.account_222102
 msgid "应交营业税"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_4
+#: model:account.account.template,name:l10n_cn_standard.account_222104
 msgid "应交资源税"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_10
+#: model:account.account.template,name:l10n_cn_standard.account_222110
 msgid "应交车船使用税"
 msgstr ""
 
@@ -749,7 +821,7 @@ msgid "无形资产减值准备"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_1_10
+#: model:account.account.template,name:l10n_cn_standard.account_22210110
 msgid "未交增值税"
 msgstr ""
 
@@ -969,22 +1041,22 @@ msgid "赔付支出"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_1_9
+#: model:account.account.template,name:l10n_cn_standard.account_22210109
 msgid "转出多交增值税"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_1_3
+#: model:account.account.template,name:l10n_cn_standard.account_22210103
 msgid "转出未交增值税"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_1_1
+#: model:account.account.template,name:l10n_cn_standard.account_22210101
 msgid "进项税额"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_1_7
+#: model:account.account.template,name:l10n_cn_standard.account_22210107
 msgid "进项税额转出"
 msgstr ""
 
@@ -1019,7 +1091,7 @@ msgid "销售费用"
 msgstr ""
 
 #. module: l10n_cn_standard
-#: model:account.account.template,name:l10n_cn_standard.account_2221_1_5
+#: model:account.account.template,name:l10n_cn_standard.account_22210105
 msgid "销项税额"
 msgstr ""
 
