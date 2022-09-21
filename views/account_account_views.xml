@@ -12,4 +12,16 @@
             </field>
         </field>
     </record>
+
+    <record id="view_account_list" model="ir.ui.view">
+        <field name="name">account.account.list</field>
+        <field name="model">account.account</field>
+        <field name="inherit_id" ref="account.view_account_list"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="account_category" optional="hide"/>
+                <field name="balance_direction" optional="hide"/>
+            </field>
+        </field>
+    </record>
 </odoo>
