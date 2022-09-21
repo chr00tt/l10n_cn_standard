@@ -10,3 +10,9 @@ class AccountAccount(models.Model):
     parent_id = fields.Many2one('account.account', 'Parent Account', index=True, ondelete='cascade', check_company=True)
     child_ids = fields.One2many('account.account', 'parent_id', 'Contains')
     parent_path = fields.Char(index=True)
+
+    balance_direction = fields.Selection([
+        ('debit', 'Debit'),
+        ('credit', 'Credit')], string='Balance direction',
+        default='debit')
+        

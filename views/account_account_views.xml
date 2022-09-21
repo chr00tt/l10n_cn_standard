@@ -7,6 +7,7 @@
         <field name="arch" type="xml">
             <field name="currency_id" position="before">
                 <field name="parent_id"/>
+                <field name="balance_direction"/>
             </field>
         </field>
     </record>
