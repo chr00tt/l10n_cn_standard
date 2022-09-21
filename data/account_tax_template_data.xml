@@ -19,7 +19,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_5'),
+                'account_id': ref('account_22210105'),
             }),
         ]"/>
         <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
@@ -30,7 +30,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_5'),
+                'account_id': ref('account_22210105'),
             }),
         ]"/>
     </record>
@@ -51,7 +51,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_5'),
+                'account_id': ref('account_22210105'),
             }),
         ]"/>
         <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
@@ -62,7 +62,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_5'),
+                'account_id': ref('account_22210105'),
             }),
         ]"/>
     </record>
@@ -83,7 +83,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_5'),
+                'account_id': ref('account_22210105'),
             }),
         ]"/>
         <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
@@ -94,7 +94,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_5'),
+                'account_id': ref('account_22210105'),
             }),
         ]"/>
     </record>
@@ -117,7 +117,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_5'),
+                'account_id': ref('account_22210105'),
             }),
         ]"/>
         <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
@@ -128,7 +128,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_5'),
+                'account_id': ref('account_22210105'),
             }),
         ]"/>
     </record>
@@ -149,7 +149,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_5'),
+                'account_id': ref('account_22210105'),
             }),
         ]"/>
         <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
@@ -160,7 +160,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_5'),
+                'account_id': ref('account_22210105'),
             }),
         ]"/>
     </record>
@@ -181,7 +181,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_5'),
+                'account_id': ref('account_22210105'),
             }),
         ]"/>
         <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
@@ -192,7 +192,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_5'),
+                'account_id': ref('account_22210105'),
             }),
         ]"/>
     </record>
@@ -215,7 +215,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_1'),
+                'account_id': ref('account_22210101'),
             }),
         ]"/>
         <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
@@ -226,7 +226,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_1'),
+                'account_id': ref('account_22210101'),
             }),
         ]"/>
     </record>
@@ -247,7 +247,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_1'),
+                'account_id': ref('account_22210101'),
             }),
         ]"/>
         <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
@@ -258,7 +258,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_1'),
+                'account_id': ref('account_22210101'),
             }),
         ]"/>
     </record>
@@ -280,7 +280,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_1'),
+                'account_id': ref('account_22210101'),
             }),
         ]"/>
         <field name="refund_repartition_line_ids" eval="[(5, 0, 0),
@@ -291,7 +291,7 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
-                'account_id': ref('account_2221_1_1'),
+                'account_id': ref('account_22210101'),
             }),
         ]"/>
     </record>
