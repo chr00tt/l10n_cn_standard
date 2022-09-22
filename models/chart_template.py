@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 from odoo import api, fields, models, _
 
 class AccountCategoryTemplate(models.Model):
@@ -49,6 +50,8 @@ class AccountChartTemplate(models.Model):
             }
             if acc['default_account_id']:
                 vals['default_account_id'] = acc_template_ref[acc['default_account_id']]
+                vals['payment_debit_account_id'] = acc_template_ref[acc['default_account_id']]
+                vals['payment_credit_account_id'] = acc_template_ref[acc['default_account_id']]
             bank_journals += self.env['account.journal'].create(vals)
 
         return bank_journals
@@ -56,7 +59,7 @@ class AccountChartTemplate(models.Model):
     @api.model
     def _get_default_bank_journals_data(self):
         if not self == self.env.ref('l10n_cn_standard.l10n_chart_china_standard_business'):
-            super(AccountChartTemplate, self)._get_default_bank_journals_data()
+            return super(AccountChartTemplate, self)._get_default_bank_journals_data()
 
         return [
             {
