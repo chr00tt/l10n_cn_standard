@@ -50,6 +50,7 @@ class AccountChartTemplate(models.Model):
             }
             if acc['default_account_id']:
                 vals['default_account_id'] = acc_template_ref[acc['default_account_id']]
+                # 未收账款和未付款账户不用单独的中间科目
                 vals['payment_debit_account_id'] = acc_template_ref[acc['default_account_id']]
                 vals['payment_credit_account_id'] = acc_template_ref[acc['default_account_id']]
             bank_journals += self.env['account.journal'].create(vals)
