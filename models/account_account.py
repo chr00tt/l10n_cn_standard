@@ -22,7 +22,7 @@ class AccountAccount(models.Model):
 
     bend = fields.Boolean(string='Bend', default=False)
 
-    account_category = fields.Many2one('account.account.category', string='Account Category', required=True)
+    account_category = fields.Many2one('account.account.category', string='Account Category')
     balance_direction = fields.Selection([
         ('debit', 'Debit'),
         ('credit', 'Credit')], string='Balance direction',
