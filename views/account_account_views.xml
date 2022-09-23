@@ -5,9 +5,9 @@
         <field name="model">account.account</field>
         <field name="inherit_id" ref="account.view_account_form"/>
         <field name="arch" type="xml">
-            <field name="company_id" position="after">
+            <field name="user_type_id" position="before">
                 <field name="account_category" />
-                <field name="parent_id"/>
+                <field name="parent_id" domain="[('bend', '=', False)]"/>
             </field>
             <field name="currency_id" position="before">
                 <field name="bend"/>
