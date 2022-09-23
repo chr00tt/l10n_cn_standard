@@ -21,7 +21,7 @@
         <field name="arch" type="xml">
             <field name="name" position="after">
                 <field name="account_category" optional="hide"/>
-                <field name="bend"/>
+                <field name="bend" optional="hide"/>
                 <field name="balance_direction" optional="hide"/>
             </field>
         </field>
