@@ -17,6 +17,8 @@ class AccountAccountTemplate(models.Model):
     parent_id = fields.Many2one('account.account.template', 'Parent Account', index=True, ondelete='cascade', check_company=True)
     child_ids = fields.One2many('account.account.template', 'parent_id', 'Contains')
     parent_path = fields.Char(index=True)
+    
+    bend = fields.Boolean(string='Bend', default=False)
 
     account_category = fields.Many2one('account.category.template', string='Account Category', required=True)
     balance_direction = fields.Selection([
@@ -48,6 +50,7 @@ class AccountChartTemplate(models.Model):
                 'currency_id': acc.get('currency_id', self.env['res.currency']).id,
                 'sequence': 10,
             }
+            # 允许会计制度设置生成的日记帐科目
             if acc['default_account_id']:
                 vals['default_account_id'] = acc_template_ref[acc['default_account_id']]
                 # 未收账款和未付款账户不用单独的中间科目
@@ -92,6 +95,8 @@ class AccountChartTemplate(models.Model):
 
     def _get_account_vals(self, company, account_template, code_acc, tax_template_ref, category_template_ref):
         val = super(AccountChartTemplate, self)._get_account_vals(company, account_template, code_acc, tax_template_ref)
+        # # 处理添加的字段
+        val['bend'] = account_template.bend
         val['account_category'] = account_template.account_category and category_template_ref[account_template.account_category.id] or False
         val['balance_direction'] = account_template.balance_direction
         return val

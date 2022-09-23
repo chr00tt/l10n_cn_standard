@@ -20,6 +20,8 @@ class AccountAccount(models.Model):
     child_ids = fields.One2many('account.account', 'parent_id', 'Contains')
     parent_path = fields.Char(index=True)
 
+    bend = fields.Boolean(string='Bend', default=False)
+
     account_category = fields.Many2one('account.account.category', string='Account Category', required=True)
     balance_direction = fields.Selection([
         ('debit', 'Debit'),
