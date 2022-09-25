@@ -5,6 +5,7 @@ from odoo import api, fields, models, _
 class AccountCategoryTemplate(models.Model):
     _name = "account.category.template"
     _description = 'Template for Account Categories'
+    
     name = fields.Char(required=True)
     chart_template_id = fields.Many2one('account.chart.template', string='Chart Template', required=True)
 

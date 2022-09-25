@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import fields, models
+from odoo import api, fields, models
 
 
 class AccountAccountCategory(models.Model):
@@ -20,6 +20,8 @@ class AccountAccount(models.Model):
     child_ids = fields.One2many('account.account', 'parent_id', 'Contains')
     parent_path = fields.Char(index=True)
 
+    level_1_id = fields.Many2one('account.account', 'Level 1 Account', compute="_compute_level_1", store=True, readonly=True)
+
     bend = fields.Boolean(string='Bend', default=False)
 
     account_category = fields.Many2one('account.account.category', string='Account Category')
@@ -27,3 +29,14 @@ class AccountAccount(models.Model):
         ('debit', 'Debit'),
         ('credit', 'Credit')], string='Balance direction',
         default='debit')
+
+    @api.depends('parent_id', 'parent_path', 'company_id')
+    def _compute_level_1(self):
+        for record in self:
+            if not record.parent_id:
+                record.level_1_id = record.id
+            elif record.parent_path.count('/') == 2:
+                record.level_1_id = record.parent_id
+            else:
+                top_id = record.parent_path.split('/')[0]
+                record.level_1_id = top_id
