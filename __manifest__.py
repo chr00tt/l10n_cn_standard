@@ -10,7 +10,7 @@
 
 
 {
-    'name': 'China - Standard CoA',
+    'name': '中国 - 企业会计准则',
     'version': '2.0',
     'category': 'Accounting/Localizations/Account Charts',
     'author': ['lvxin@gmail.co', 'oldrev@gmail.co', 'ccdos@intoerp.com', 'jeff@osbzr.com', 'jeffery9@gmail.com', '1217875253@qq.com'],
