@@ -110,7 +110,7 @@ msgid "Level 1 Account"
 msgstr "一级科目"
 
 #. module: l10n_cn_standard
-#ssLevel 1 Account: model:account.account.category,name:l10n_cn_standard.1_account_category_liability
+#: model:account.account.category,name:l10n_cn_standard.1_account_category_liability
 msgid "Liability"
 msgstr "负债类"
 
