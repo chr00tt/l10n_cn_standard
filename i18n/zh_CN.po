@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-25 02:37+0000\n"
-"PO-Revision-Date: 2022-09-25 02:37+0000\n"
+"POT-Creation-Date: 2022-09-26 07:50+0000\n"
+"PO-Revision-Date: 2022-09-26 07:50+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,7 @@ msgid "Account Chart Template"
 msgstr "科目表模版"
 
 #. module: l10n_cn_standard
-#: model:account.account.category,name:l10n_cn_standard.2_account_category_asset
+#: model:account.account.category,name:l10n_cn_standard.1_account_category_asset
 msgid "Asset"
 msgstr "资产类"
 
@@ -52,12 +52,12 @@ msgid "Bend"
 msgstr "末级"
 
 #. module: l10n_cn_standard
-#: model:account.account.category,name:l10n_cn_standard.2_account_category_common
+#: model:account.account.category,name:l10n_cn_standard.1_account_category_common
 msgid "Common"
 msgstr "共同类"
 
 #. module: l10n_cn_standard
-#: model:account.account.category,name:l10n_cn_standard.2_account_category_cost
+#: model:account.account.category,name:l10n_cn_standard.1_account_category_cost
 msgid "Cost"
 msgstr "成本类"
 
@@ -84,7 +84,7 @@ msgid "Display Name"
 msgstr "显示名称"
 
 #. module: l10n_cn_standard
-#: model:account.account.category,name:l10n_cn_standard.2_account_category_equity
+#: model:account.account.category,name:l10n_cn_standard.1_account_category_equity
 msgid "Equity"
 msgstr "所有者权益类"
 
@@ -104,7 +104,13 @@ msgid "Last Modified on"
 msgstr "最后修改日"
 
 #. module: l10n_cn_standard
-#: model:account.account.category,name:l10n_cn_standard.2_account_category_liability
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_account__level_1_id
+#: model:ir.model.fields,field_description:l10n_cn_standard.field_account_move_line__level_1_account
+msgid "Level 1 Account"
+msgstr "一级科目"
+
+#. module: l10n_cn_standard
+#ssLevel 1 Account: model:account.account.category,name:l10n_cn_standard.1_account_category_liability
 msgid "Liability"
 msgstr "负债类"
 
@@ -122,7 +128,7 @@ msgid "Parent Path"
 msgstr "上级路径"
 
 #. module: l10n_cn_standard
-#: model:account.account.category,name:l10n_cn_standard.2_account_category_profit_and_loss
+#: model:account.account.category,name:l10n_cn_standard.1_account_category_profit_and_loss
 msgid "Profit and Loss"
 msgstr "损益类"
 
