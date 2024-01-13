@@ -22,7 +22,10 @@ Including the following data in the Accounting Standards for Business Enterprise
 * 税金模板
 
     """,
-    'depends': ['l10n_cn'],
+    'depends': [
+        'account',
+        "l10n_multilang",
+    ],
     'data': [
         'data/l10n_cn_standard.xml',
         'data/account.account.template.csv',
