@@ -18,6 +18,8 @@
 <data>
     <!-- Chart template account links -->
     <record id="l10n_chart_china_standard_business" model="account.chart.template">
+        <field name="use_anglo_saxon" eval="True"/>
+
         <field name="property_account_receivable_id" ref="account_1122" />
         <field name="property_account_payable_id" ref="account_2202" />
 
