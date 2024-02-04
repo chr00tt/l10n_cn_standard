@@ -1,6 +1,4 @@
 id,code,name,reconcile,user_type_id/id,chart_template_id/id
-account_1001,1001,库存现金,TRUE,account.data_account_type_liquidity,l10n_chart_china_standard_business
-account_1002,1002,银行存款,TRUE,account.data_account_type_liquidity,l10n_chart_china_standard_business
 account_1003,1003,存放中央银行款项,TRUE,account.data_account_type_current_assets,l10n_chart_china_standard_business
 account_1011,1011,存放同业,FALSE,account.data_account_type_current_assets,l10n_chart_china_standard_business
 account_1012,1012,其他货币资金,FALSE,account.data_account_type_current_assets,l10n_chart_china_standard_business
