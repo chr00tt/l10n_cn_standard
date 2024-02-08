@@ -16,7 +16,6 @@ class AccountChartTemplate(models.AbstractModel):
         """
         return {
             'code_digits': '6',
-            'use_anglo_saxon': True,
             'property_account_receivable_id': 'account_1122',
             'property_account_payable_id': 'account_2202',
             'property_account_expense_categ_id': 'account_6401',
@@ -49,5 +48,7 @@ class AccountChartTemplate(models.AbstractModel):
                 # 'default_cash_difference_expense_account_id': 'cash_diff_expense',
                 # 'account_journal_early_pay_discount_loss_account_id': 'cash_discount_loss',
                 # 'account_journal_early_pay_discount_gain_account_id': 'cash_discount_gain',
+                'account_sale_tax_id': 'account_tax_sales_included_13',
+                'account_purchase_tax_id': 'account_tax_purchase_excluded_13',
             }
         }

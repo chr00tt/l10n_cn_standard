@@ -3,6 +3,8 @@
 
 {
     'name': '中国 - 企业会计准则',
+    'icon': '/account/static/description/l10n.png',
+    'countries': ['cn'],
     'version': '2.0',
     'category': 'Accounting/Localizations/Account Charts',
     'website': 'https://github.com/chr00tt/l10n_cn_standard',
