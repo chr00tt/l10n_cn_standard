@@ -24,10 +24,5 @@ Including the following data in the Accounting Standards for Business Enterprise
     'depends': [
         'account',
     ],
-    'data': [
-        'data/l10n_cn_standard.xml',
-        'data/account.account.template.csv',
-        'data/l10n_cn_standard_post.xml',
-    ],
     'license': 'LGPL-3',
 }
