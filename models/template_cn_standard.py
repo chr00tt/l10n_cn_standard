@@ -15,6 +15,7 @@ class AccountChartTemplate(models.AbstractModel):
         :rtype: dict
         """
         return {
+            'name': '企业会计准则',
             'code_digits': '6',
             'property_account_receivable_id': 'account_1122',
             'property_account_payable_id': 'account_2202',
@@ -26,7 +27,7 @@ class AccountChartTemplate(models.AbstractModel):
             # 'property_stock_account_production_cost_id': 'cost_of_production',
         }
 
-    @template('generic_coa', 'res.company')
+    @template('cn_standard', 'res.company')
     def _get_cn_standard_res_company(self):
         """Return the data to be written on the company.
 
