@@ -4,6 +4,7 @@
 {
     'name': '中国 - 企业会计准则',
     'version': '2.0',
+    'author': "He Jian",
     'category': 'Accounting/Localizations/Account Charts',
     'website': 'https://github.com/chr00tt/l10n_cn_standard',
     'description': """
