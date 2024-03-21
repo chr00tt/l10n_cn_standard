@@ -21,8 +21,8 @@ class AccountChartTemplate(models.AbstractModel):
             'property_account_payable_id': 'account_2202',
             'property_account_expense_categ_id': 'account_6401',
             'property_account_income_categ_id': 'account_6001',
-            'property_stock_account_input_categ_id': 'account_220250',
-            'property_stock_account_output_categ_id': 'account_140505',
+            'property_stock_account_input_categ_id': 'account_1402',
+            'property_stock_account_output_categ_id': 'account_1406',
             'property_stock_valuation_account_id': 'account_1405',
             # 'property_stock_account_production_cost_id': 'cost_of_production',
         }

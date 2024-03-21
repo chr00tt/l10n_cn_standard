@@ -7,6 +7,7 @@
     'countries': ['cn'],
     'version': '2.0',
     'category': 'Accounting/Localizations/Account Charts',
+    'author': 'He Jian',
     'website': 'https://github.com/chr00tt/l10n_cn_standard',
     'description': """
 Including the following data in the Accounting Standards for Business Enterprises
