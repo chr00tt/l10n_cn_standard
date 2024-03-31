@@ -1,6 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_account_category_template,account.category.template,model_account_category_template,account.group_account_manager,1,1,1,1
-
-access_account_account_category_manager,account.account.category,model_account_account_category,account.group_account_manager,1,1,1,1
-access_account_account_category_readonly,account.account.category readonly,model_account_account_category,account.group_account_readonly,1,0,0,0
-access_account_account_category_invoice,account.account.category invoice,model_account_account_category,account.group_account_invoice,1,0,0,0
