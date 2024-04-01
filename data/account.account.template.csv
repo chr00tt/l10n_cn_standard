@@ -155,7 +155,7 @@
 "account_6202","摊回赔付支出","6202","expense","l10n_chart_china_standard_business","","False"
 "account_6203","摊回分保费用","6203","expense","l10n_chart_china_standard_business","","False"
 "account_6301","营业外收入","6301","expense","l10n_chart_china_standard_business","","False"
-"account_6401","主营业务成本","6401","expense","l10n_chart_china_standard_business","","False"
+"account_6401","主营业务成本","6401","expense_direct_cost","l10n_chart_china_standard_business","","False"
 "account_6402","其他业务成本","6402","expense","l10n_chart_china_standard_business","","False"
 "account_6403","营业税金及附加","6403","expense","l10n_chart_china_standard_business","","False"
 "account_6411","利息支出","6411","expense","l10n_chart_china_standard_business","","False"
