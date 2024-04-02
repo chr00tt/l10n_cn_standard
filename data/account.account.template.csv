@@ -151,6 +151,7 @@
 "account_6061","汇兑损益","6061","income","l10n_chart_china_standard_business","","False"
 "account_6101","公允价值变动损益","6101","income","l10n_chart_china_standard_business","","False"
 "account_6111","投资收益","6111","income","l10n_chart_china_standard_business","","False"
+"account_6117","其他收益","6117","income","l10n_chart_china_standard_business","","False"
 "account_6201","摊回保险责任准备金","6201","expense","l10n_chart_china_standard_business","","False"
 "account_6202","摊回赔付支出","6202","expense","l10n_chart_china_standard_business","","False"
 "account_6203","摊回分保费用","6203","expense","l10n_chart_china_standard_business","","False"
