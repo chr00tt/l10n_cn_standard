@@ -104,7 +104,7 @@
 "account_222111","应交个人所得税","222111","liability_current","l10n_chart_china_standard_business","","False"
 "account_2231","应付利息","2231","liability_current","l10n_chart_china_standard_business","","False"
 "account_2232","应付股利","2232","liability_current","l10n_chart_china_standard_business","","False"
-"account_2241","其他应付款","2241","liability_payable","l10n_chart_china_standard_business","","False"
+"account_2241","其他应付款","2241","liability_payable","l10n_chart_china_standard_business","","True"
 "account_2251","应付保单红利","2251","liability_current","l10n_chart_china_standard_business","","False"
 "account_2261","应付分保账款","2261","liability_current","l10n_chart_china_standard_business","","False"
 "account_2311","代理买卖证券款","2311","liability_current","l10n_chart_china_standard_business","","False"
