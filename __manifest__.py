@@ -11,5 +11,8 @@
     'depends': [
         'account',
     ],
+    'demo': [
+        'data/demo_company.xml',
+    ],
     'license': 'LGPL-3',
 }
